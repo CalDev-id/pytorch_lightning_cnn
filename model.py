@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import pytorch_lightning as pl
 
+
 class NeuralNet(pl.LightningModule):
     # Initialization
     def __init__(self, input_size, hidden_size, num_classes, lr):
@@ -15,6 +16,7 @@ class NeuralNet(pl.LightningModule):
 
         self.y_test = torch.tensor([])
         self.y_predicted_test = torch.tensor([])
+
 
     # Optimizer
     def configure_optimizers(self):

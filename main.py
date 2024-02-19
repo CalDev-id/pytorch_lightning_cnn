@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 from pytorch_lightning import Trainer
 
-from preprocessing.preprocessing import DataModule
-from model.model import NeuralNet
+from data_loader import DataModule
+from model import NeuralNet
 
 torch.set_float32_matmul_precision('high')
 
